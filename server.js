@@ -9,7 +9,6 @@ var io = require('socket.io')(server, {
       }
 });
 
-app.use(express.static(__dirname + '/node_modules'));  
 app.get('/', function(req, res) {  
     res.send('Server')
 });
