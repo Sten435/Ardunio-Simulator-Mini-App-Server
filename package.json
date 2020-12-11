@@ -10,6 +10,9 @@
   "author": "Sten435",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^3.0.3"
+    "serial-io": "^1.2.0",
+    "serialport": "^9.0.3",
+    "socket.io": "^3.0.3",
+    "usb-detection": "^4.10.0"
   }
 }
