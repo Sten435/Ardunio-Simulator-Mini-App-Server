@@ -1,18 +1,33 @@
 {
-  "name": "ardunio_sim_controller",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
-  },
-  "author": "Sten435",
-  "license": "ISC",
-  "dependencies": {
-    "serial-io": "^1.2.0",
-    "serialport": "^9.0.3",
-    "socket.io": "^3.0.3",
-    "usb-detection": "^4.10.0"
-  }
+    "name": "electron-serialport",
+    "version": "1.0.1",
+    "description": "A minimal Electron application with node serialport",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "install": "electron-rebuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:johnny-five-io/electron-serialport.git"
+    },
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^5.0.13",
+        "electron-rebuild": "^1.11.0"
+    },
+    "dependencies": {
+        "serial-io": "^1.2.0",
+        "serialport": "^9.0.3",
+        "socket.io": "^3.0.4",
+        "usb-detection": "^4.10.0"
+    }
 }

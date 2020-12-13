@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ardunio Server</title>
+</head>
+
+<body>
+    <style>
+        body{
+            box-sizing: border-box;
+
+            margin: 0;
+            padding: 0;
+        }
+        #submit{
+            width: 14rem;
+            height: 2.6rem;
+            border-radius: 1rem;
+            text-align: center;
+
+            padding: .2rem;
+
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+<div id="container">
+    <button id="submit" onclick="sendData()">Connect Arduino</button>
+</div>
+</body>
+
+<script src="./renderer.js"></script>
+
+</html>
