@@ -94,7 +94,7 @@ let openSerial = (()=>{
     
             client.on('sendDdata', function(data){
               console.log(data)
-              // serialport.write()
+              serialport.write("13")
             })
         })
       }))
