@@ -4,38 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Ardunio Server</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <style>
-        body{
-            box-sizing: border-box;
+  <div class="clash-card giant">
+      <br>
+      <br>
+    <div class="clash-card__unit-name">Ardunio Local Server</div>
+    <br>
+    <div class="clash-card__unit-description">
+        <button id="submit" class="submit-hover submit" onclick="sendData()">Connect To Web</button>
+    </div>
+    <br>
+    <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+      <div class="one-two">
+        <div class="stat" id="paths_number">????</div>
+        <div class="stat-value">Serial Path's</div>
+      </div>
 
-            margin: 0;
-            padding: 0;
-        }
-        #submit{
-            width: 14rem;
-            height: 2.6rem;
-            border-radius: 1rem;
-            text-align: center;
-
-            padding: .2rem;
-
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        #container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100%;
-        }
-    </style>
-<div id="container">
-    <button id="submit" onclick="sendData()">Connect Arduino</button>
+      <div class="one-two">
+        <div class="stat" id="bautrate_number">/</div>
+        <div class="stat-value">Bautrate</div>
+      </div>
+  </div>
+  </div>
 </div>
 </body>
 
