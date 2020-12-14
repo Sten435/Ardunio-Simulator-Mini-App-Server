@@ -137,7 +137,8 @@ let openSerial = ((win)=>{
             })
     
             client.on('sendDdata', function(data){
-              // serialport.write('13')
+              serialport.write(data.on)
+              //console.log(data);
             })
         })
       }))
