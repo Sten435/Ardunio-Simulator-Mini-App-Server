@@ -124,6 +124,7 @@ let openSerial = ((win)=>{
           serialport.pipe(parser)
             parser.on('data', ((data)=>{
               client.emit('mainDataFromLocalServer', data)
+              console.log(data);
             }))
             client.on('disconnectPort', function(){
               serialport.destroy()
@@ -136,9 +137,9 @@ let openSerial = ((win)=>{
               //Server Closed
             })
     
-            client.on('sendDdata', function(data){
-              serialport.write(data.on)
-              //console.log(data);
+            client.on('sendData', function(data){
+              serialport.write(data.message)
+              console.log(data.message);
             })
         })
       }))

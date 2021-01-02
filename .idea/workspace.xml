@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ce4903-7eb6-49e0-bc9d-61c1981bc9c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Ardunio-Simulator-Mini-App-Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/darwin_list.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/darwin_list.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/poller.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/poller.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/serialport.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/serialport.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/serialport_unix.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/.deps/Release/obj.target/bindings/src/serialport_unix.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/bindings.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/bindings.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/darwin_list.o" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/darwin_list.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/poller.o" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/poller.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/serialport.o" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/serialport.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/serialport_unix.o" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/Release/obj.target/bindings/src/serialport_unix.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/bindings.target.mk" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/bindings.target.mk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/config.gypi" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@serialport/bindings/build/config.gypi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/usb-detection/build/Release/detection.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/usb-detection/build/Release/detection.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -69,5 +57,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
