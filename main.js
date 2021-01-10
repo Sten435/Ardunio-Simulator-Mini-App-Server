@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Notification, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 
 var server = require('http').createServer();
 const usbDetect = require('usb-detection');
@@ -18,7 +18,6 @@ function createWindow () {
 
   win.loadFile('index.html')
   // win.webContents.openDevTools()
-
   return win
 }
 
@@ -67,9 +66,7 @@ app.whenReady().then(()=>{
 })
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
     app.quit()
-  }
 })
 
 app.on('activate', () => {
@@ -110,21 +107,22 @@ let openSerial = ((win)=>{
             })
         }, 500);
       });
-    
+
       client.on('portData_bautData', ((data)=>{
         let port = data.PORTValue
         let bautrate = data.BautrateValue
         const parser = new Readline()
         const serialport = new SerialPort(port, { 
-          baudRate: parseInt(bautrate),
-          lock: false
-        })
+            baudRate: parseInt(bautrate),
+            lock: false
+          })
         serialport.on('open', function(){
           win.webContents.send('bautrate', bautrate)
           serialport.pipe(parser)
+
             parser.on('data', ((data)=>{
               client.emit('mainDataFromLocalServer', data)
-              console.log(data);
+              console.log(data + ' Gekregen van de ardunio');
             }))
             client.on('disconnectPort', function(){
               serialport.destroy()
@@ -139,7 +137,7 @@ let openSerial = ((win)=>{
     
             client.on('sendData', function(data){
               serialport.write(data.message)
-              console.log(data.message);
+              console.log(data.message + ' Geschreven naar ardunio');
             })
         })
       }))
