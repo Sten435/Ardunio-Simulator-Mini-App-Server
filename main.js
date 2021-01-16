@@ -122,7 +122,7 @@ let openSerial = ((win)=>{
 
             parser.on('data', ((data)=>{
               client.emit('mainDataFromLocalServer', data)
-              console.log(data + ' Gekregen van de ardunio');
+              console.log(data + ' komt van de ardunio');
             }))
             client.on('disconnectPort', function(){
               serialport.destroy()
@@ -137,7 +137,7 @@ let openSerial = ((win)=>{
     
             client.on('sendData', function(data){
               serialport.write(data.message)
-              console.log(data.message + ' Geschreven naar ardunio');
+              console.log(data.message + ' Geschreven naar arduino');
             })
         })
       }))
